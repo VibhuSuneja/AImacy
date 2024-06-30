@@ -1,143 +1,70 @@
-markdown
-# Pharmacy Management System
+# Getting Started with Create React App
 
-This is a full-stack application for managing patients and prescriptions in a pharmacy. The backend is built using Django and Django REST framework, and the frontend is developed using React.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Features
+## Available Scripts
 
-- **Patient Management**: Add, view, and manage patient information.
-- **Prescription Management**: Add, view, and manage prescriptions for patients.
-- **REST API**: A fully functional REST API for interacting with the data.
-- **User Interface**: A clean and simple user interface for pharmacists to interact with the system.
+In the project directory, you can run:
 
-## Getting Started
+### `npm start`
 
-These instructions will help you set up the project on your local machine for development and testing purposes.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Prerequisites
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- Python 3.8+
-- Node.js 14+
-- npm (comes with Node.js)
-- Django 3.2+
-- Django REST framework
-- React
+### `npm test`
 
-### Installation
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-1. **Clone the repository**
+### `npm run build`
 
-   sh
-   git clone https://github.com/your-username/pharmacy-management-system.git
-   cd pharmacy-management-system
-   
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-2. **Set up the backend (Django)**
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-   - Create and activate a virtual environment:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-     sh
-     python -m venv venv
-     venv\Scripts\activate  # On Windows
-     
+### `npm run eject`
 
-   - Install the required Python packages:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-     sh
-     pip install --upgrade pip
-     pip install django djangorestframework
-     
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-   - Apply database migrations:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-     sh
-     python manage.py makemigrations
-     python manage.py migrate
-     
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-   - Create a superuser:
+## Learn More
 
-     sh
-     python manage.py createsuperuser
-     
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-   - Start the Django development server:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-     sh
-     python manage.py runserver
-     
+### Code Splitting
 
-3. **Set up the frontend (React)**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-   - Navigate to the `pharmacy-ui` directory:
+### Analyzing the Bundle Size
 
-     sh
-     cd pharmacy-ui
-     
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-   - Install the required npm packages:
+### Making a Progressive Web App
 
-     sh
-     npm install
-     
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-   - Start the React development server:
+### Advanced Configuration
 
-     sh
-     npm start
-     
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-4. **Access the application**
+### Deployment
 
-   - Open your web browser and navigate to `http://localhost:3000/` to access the React frontend.
-   - The backend API can be accessed at `http://localhost:8000/`.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### Directory Structure
+### `npm run build` fails to minify
 
-
-pharmacy-management-system/
-├── pharmacy_project/
-│   ├── pharmacy_project/
-│   ├── prescriptions/
-│   ├── manage.py
-│   └── ...
-├── pharmacy-ui/
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│   └── ...
-├── venv/
-└── README.md
-
-
-### API Endpoints
-
-- **Patients**
-  - `GET /patients/` - List all patients
-  - `POST /patients/` - Create a new patient
-  - `GET /patients/{id}/` - Retrieve a patient by ID
-  - `PUT /patients/{id}/` - Update a patient by ID
-  - `DELETE /patients/{id}/` - Delete a patient by ID
-
-- **Prescriptions**
-  - `GET /prescriptions/` - List all prescriptions
-  - `POST /prescriptions/` - Create a new prescription
-  - `GET /prescriptions/{id}/` - Retrieve a prescription by ID
-  - `PUT /prescriptions/{id}/` - Update a prescription by ID
-  - `DELETE /prescriptions/{id}/` - Delete a prescription by ID
-
-### Contributing
-
-We welcome contributions! Please fork the repository and create a pull request with your changes.
-
-### License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-### Contact
-
-For any questions or feedback, please contact [your-email@example.com].
-
-
-
- *Feel free to customize the content to better fit your project's details and your personal preferences.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
